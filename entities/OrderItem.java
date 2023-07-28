@@ -9,15 +9,12 @@ public class OrderItem {
 	public OrderItem() {
 		
 	}
-
-
 	public OrderItem(Integer quantity, Double price, Product product) {
 		
 		this.quantity = quantity;
 		this.price = price;
 		this.product = product;
 	}
-
 
 	public Integer getQuantity() {
 		return quantity;
@@ -34,20 +31,18 @@ public class OrderItem {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	
 	public double subTotal () {
 		return price*quantity;
 	}
 	
-
 	public Product getProduct() {
 		return product;
 	}
 
-
 	public void setProduct(Product product) {
 		this.product = product;
 	}
-
 
 	@Override
 	public String toString() {
